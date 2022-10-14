@@ -6,6 +6,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <div class="topBar">
+    <RouterLink to="/" >
+      <img class="logo" src="img/unknown.png" alt="yes">
+    </RouterLink>
     <form class="topForm">
       <input type="text" placeholder="Search.." class="searchBar">
       <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
@@ -16,16 +19,16 @@
       </RouterLink>
     </button>
     <button class="utilities">
-      <RouterLink to="">
+      <RouterLink to="/cart">
         <i class="material-icons">shopping_cart</i>
       </RouterLink>
     </button>
   </div>
   <div class="filter">
     <RouterLink to="/shop" class="filterLink">All</RouterLink>
-    <RouterLink to="" class="filterLink">Cocktails</RouterLink>
-    <RouterLink to="" class="filterLink">Mocktails</RouterLink>
-    <RouterLink to="" class="filterLink">Originals</RouterLink>
+    <RouterLink to="/shopC" class="filterLink">Cocktails</RouterLink>
+    <RouterLink to="/shopS" class="filterLink">Shots</RouterLink>
+    <RouterLink to="/shopO" class="filterLink">Originals</RouterLink>
   </div>
 </template>
 
@@ -44,6 +47,10 @@
       padding-left: 70px;
     }
 
+    .logo{
+      width: 100%;
+      height: 100%;
+    }
     .searchBar {
       height: 40px;
       width: 400px;

@@ -4,7 +4,7 @@
 
 <template>
     <SideBar />
-    <div class="frstThing">
+    <div id="frstThing">
       <div class="center">
         EvoCktail
       </div>
@@ -30,26 +30,28 @@
       <img src='img/kraken.png' alt="test">
     </div>
   </div>
-  <div id="cocktails">
-    <div class="imgPres">
-      <div class="leftLink">
-        <RouterLink to="/shop" class="linkTo">
-          Check the 
-          Cocktails
-        </RouterLink>
+  <div class="bg">
+    <div id="cocktails">
+      <div class="imgPres">
+        <div class="leftLink">
+          <RouterLink to="/shop" class="linkTo">
+            Check the 
+            Cocktails
+          </RouterLink>
+        </div>
       </div>
-    </div>
-    <div class="presentation">
-      <div class="titlePres">
-        <h1>TASTE AND ENJOY</h1>
+      <div class="presentation">
+        <div class="titlePres">
+          <h1>TASTE AND ENJOY</h1>
+        </div>
+        <div class="rightLink">
+          <RouterLink to="/shop" class="linkTo">
+            Check the 
+            Shots
+          </RouterLink>
+        </div>
       </div>
-      <div class="rightLink">
-        <RouterLink to="/shop" class="linkTo">
-          Check the 
-          Mocktails
-        </RouterLink>
-      </div>
-    </div>
+  </div>
   </div>
   <div id="originals">
     <div class="text">
@@ -77,7 +79,7 @@
 </template>
 
 <style scoped lang="scss">
-  .frstThing {
+  #frstThing {
     height: 760px;
     width: 100%;
     background-image: radial-gradient(rgba(0, 0, 0, 0.4), black 95%), url('img/bar.png');
@@ -171,11 +173,15 @@
     }  
   }
 
-  #cocktails {
-    height: 760px;
-    width: 100%;
-    position: relative;
+  .bg {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), black 90%);
+    height: 760px;
+  }
+
+  #cocktails {
+    height: 100%;
+    max-width: 1600px;
+    position: relative;
 
     .imgPres {
       color: white;

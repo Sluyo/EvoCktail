@@ -35,6 +35,8 @@
         padding-top: 150px;
         color: white;
         width: 100%;
+        min-height: 100vh;
+        max-height: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-around;

@@ -39,7 +39,7 @@
     .loginPage {
         padding-top: 150px;
         width: 100%;
-        height: 607px;
+        height: 100vh;
         background: black;
         color: white;
         text-align: left;
