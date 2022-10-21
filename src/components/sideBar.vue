@@ -4,7 +4,7 @@
   <nav>
     <button @click="closeNav" class="closeNav">☰</button>
     <div class="links">
-      <a href="/#frstThing">Home</a>
+      <a href="#frstThing">Home</a>
       <router-link to="/shop">Shop</router-link>
       <a href="/#featured">Featured</a>
       <a href="/#cocktails">Cocktails</a>

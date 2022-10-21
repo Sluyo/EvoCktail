@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Laink Dégout",
+        "price": 20.99,
+        "link": "img/Laink_Dégout.png",
+        "description": "beurk",
+        "type": "Cocktail"
+    },
+    {
+        "name": "Laink Pervert",
+        "price": 29.99,
+        "link": "img/Laink_Pervert.png",
+        "description": "vanus",
+        "type": "Shot"
+    },
+    {
+        "name": "Laink Gros",
+        "price": 25.99,
+        "link": "img/Laink_Gros.png",
+        "description": "miam",
+        "type": "Cocktail"
+    },
+    {
+        "name": "Matteo The Barman",
+        "price": 0.99,
+        "link": "img/me.jpg",
+        "description": "shake",
+        "type": "Original"
+    },
+    {
+        "name": "Quentin The Barman",
+        "price": 0.99,
+        "link": "img/him.jpg",
+        "description": "shot",
+        "type": "Original"
+    }
+]

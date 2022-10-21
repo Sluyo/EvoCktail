@@ -1,14 +1,16 @@
 <script setup>
     import SearchBar from '../components/topBar.vue'
     import Card from '../components/Card.vue'
+    import {ref} from 'vue'
+    import products from '../assets/product.json'
+
+    const drinks = ref(products)
 </script>
 
 <template>  
     <SearchBar />
     <div class="products">
-
-        <Card link="img/me.jpg" name="MATT THE BARMAN" :price="0.99"/>
-        <Card link="img/him.jpg" name="QUENTIN THE BARMAN" :price="0.99"/>
+        <Card v-for="drink in drinks.filter(drink => drink.type === 'Original')" :key="drink.name" :link=drink.link :name=drink.name :price=drink.price />
     </div>
 </template>
 

@@ -10,7 +10,7 @@
 <template>  
     <SearchBar />
     <div class="products">
-        <Card v-for="drink in drinks.filter(drink => drink.type === 'Shot')" :key="drink.name" :link=drink.link :name=drink.name :price=drink.price />
+        <Card v-for="drink in drinks.filter(drink => drink.type === 'Cocktail')" :key="drink.name" :link=drink.link :name=drink.name :price=drink.price />
     </div>
 </template>
 

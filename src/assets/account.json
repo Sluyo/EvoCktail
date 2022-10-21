@@ -1,0 +1,14 @@
+[
+    {
+        "email": "matteo.javori@efrei.net",
+        "name": "Matteo",
+        "password": 1234,
+        "admin": true
+    },
+    {
+        "email": "quentin.fourie@efrei.net",
+        "name": "Quentin",
+        "password": 1234,
+        "admin": false
+    }
+]

@@ -3,13 +3,13 @@
 </script>
 
 <template>
-    <SideBar />
-    <div id="frstThing">
-      <div class="center">
-        EvoCktail
-      </div>
+  <SideBar />
+  <div id="frstThing">
+    <div class="center">
+      EvoCktail
     </div>
-    <div id="featured">
+  </div>
+  <div id="featured">
     <h1>FEATURED</h1>
     <div class="featuresImg">
       <div class="showing fromBottom">
@@ -30,28 +30,26 @@
       <img src='img/kraken.png' alt="test">
     </div>
   </div>
-  <div class="bg">
-    <div id="cocktails">
-      <div class="imgPres">
-        <div class="leftLink">
-          <RouterLink to="/shop" class="linkTo">
-            Check the 
-            Cocktails
-          </RouterLink>
-        </div>
+  <div id="cocktails">
+    <div class="imgPres">
+      <div class="leftLink">
+        <RouterLink to="/shopC" class="linkTo">
+          Check the 
+          Cocktails
+        </RouterLink>
       </div>
-      <div class="presentation">
-        <div class="titlePres">
-          <h1>TASTE AND ENJOY</h1>
-        </div>
-        <div class="rightLink">
-          <RouterLink to="/shop" class="linkTo">
-            Check the 
-            Shots
-          </RouterLink>
-        </div>
+    </div>
+    <div class="presentation">
+      <div class="titlePres">
+        <h1>TASTE AND ENJOY</h1>
       </div>
-  </div>
+      <div class="rightLink">
+        <RouterLink to="/shopS" class="linkTo">
+          Check the 
+          <br>Shots
+        </RouterLink>
+      </div>
+    </div>
   </div>
   <div id="originals">
     <div class="text">
@@ -64,7 +62,7 @@
         <br>You might not come back from it.
       </div>
       <div class="originalsLink">
-        <RouterLink to="" class="linkTo">
+        <RouterLink to="/shopO" class="linkTo">
           Follow the Deep Path
         </RouterLink>
       </div>
@@ -173,15 +171,11 @@
     }  
   }
 
-  .bg {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), black 90%);
-    height: 760px;
-  }
-
   #cocktails {
-    height: 100%;
-    max-width: 1600px;
+    height: 760px;
+    width: 100%;
     position: relative;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), black 90%);
 
     .imgPres {
       color: white;

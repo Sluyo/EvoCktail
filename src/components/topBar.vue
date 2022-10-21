@@ -1,5 +1,9 @@
-<script>
-  
+<script setup>
+  import {ref} from 'vue'
+
+  const isAdmin = ref(false);
+  const search = ref(null);
+
 </script>
 
 <template>
@@ -10,7 +14,7 @@
       <img class="logo" src="img/unknown.png" alt="yes">
     </RouterLink>
     <form class="topForm">
-      <input type="text" placeholder="Search.." class="searchBar">
+      <input type="text" placeholder="Search.." class="searchBar" v-model="search">
       <button type="submit" class="searchButton"><i class="fa fa-search"></i></button>
     </form>
     <button class="utilities">
@@ -29,6 +33,7 @@
     <RouterLink to="/shopC" class="filterLink">Cocktails</RouterLink>
     <RouterLink to="/shopS" class="filterLink">Shots</RouterLink>
     <RouterLink to="/shopO" class="filterLink">Originals</RouterLink>
+    <RouterLink to="/admin" class="filterLink" v-show="isAdmin">Admin</RouterLink>
   </div>
 </template>
 
@@ -51,6 +56,7 @@
       width: 100%;
       height: 100%;
     }
+
     .searchBar {
       height: 40px;
       width: 400px;

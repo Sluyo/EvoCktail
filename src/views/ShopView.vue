@@ -1,16 +1,16 @@
 <script setup>
     import SearchBar from '../components/topBar.vue'
     import Card from '../components/Card.vue'
+    import {ref} from 'vue'
+    import products from '../assets/product.json'
+
+    const drinks = ref(products)
 </script>
 
 <template>  
     <SearchBar />
     <div class="products">
-        <Card link="img/Laink_Dégout.png" name="LAINK DEGOUT" :price="20.99"/>
-        <Card link="img/Laink_Gros.png" name="LAINK GROS" :price="25.99"/>
-        <Card link="img/Laink_Pervert.png" name="LAINK PERVERT" :price="29.99"/>
-        <Card link="img/me.jpg" name="MATT THE BARMAN" :price="0.99"/>
-        <Card link="img/him.jpg" name="QUENTIN THE BARMAN" :price="0.99"/>
+        <Card v-for="drink in drinks" :key="drink.name" :link=drink.link :name=drink.name :price=drink.price :description=drink.description />
     </div>
 </template>
 
@@ -24,8 +24,7 @@ export default {
     .products {
         background: black;
         width: 100%;
-        min-height: 100vh;
-        max-height: auto;
+        height: auto;
         padding-top: 150px;
         display: flex;
         flex-direction: row;
